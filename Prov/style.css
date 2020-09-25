@@ -32,5 +32,9 @@ Header {font-size:30px;}
 */
 #Coventry { display: flex;
      flex-flow: row wrap;
+     align-content: flex-start;
 }
-#Cathedral {order:-1;}
+#CoventryText {
+     flex-flow: row wrap;
+      justify-content: flex-end;
+     }
