@@ -1,0 +1,36 @@
+h1 {font-size: 40px;
+     background-color:lightblue;}
+#lorem,#lorem2
+{font-size:20px;
+     text-align:center;}
+ul { font-size: 20px;
+     list-style:none;}
+tr {font-size:35px;
+    text-align:center;
+     list-style:none;} 
+footer {font-size:20px;
+display:flex;
+justify-content: center;} 
+li {list-style:none;}
+body 
+{background-color:white;}
+nav ul 
+{background-color:rgb(16, 195, 240) ;
+    display:flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+}
+Header {font-size:30px;}
+/*div img  {
+     display:flex;
+    flex-direction: row;
+     flex-wrap:wrap;
+     align-content: flex-start;
+     align-items: stretch;
+}
+*/
+#Coventry { display: flex;
+     flex-flow: row wrap;
+}
+#Cathedral {order:-1;}
