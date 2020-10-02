@@ -1,40 +1,45 @@
-h1 {font-size: 40px;
+.header1 {font-size: 40px;
      background-color:lightblue;}
-#lorem,#lorem2
-{font-size:20px;
-     text-align:center;}
-ul { font-size: 20px;
-     list-style:none;}
-tr {font-size:35px;
-    text-align:center;
+.lorem
+{
+     font-size:20px;
+text-align:center;
+}
+
+.ulist { font-size: 20px;
      list-style:none;} 
-footer {font-size:20px;
+
+footer 
+{
+font-size: 15px;
 display:flex;
-justify-content: center;} 
+justify-content: center;
+font-size: 10px;
+}
+
 li {list-style:none;}
 body 
 {background-color:white;}
-nav ul 
+.navlist 
 {background-color:rgb(16, 195, 240) ;
     display:flex;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-around;
 }
-Header {font-size:30px;}
-/*div img  {
-     display:flex;
-    flex-direction: row;
-     flex-wrap:wrap;
-     align-content: flex-start;
-     align-items: stretch;
+.Header {font-size:30px;
+     
 }
-*/
-#Coventry { display: flex;
+.Coventry { display: flex;
      flex-flow: row wrap;
-     align-content: flex-start;
 }
 #CoventryText {
      flex-flow: row wrap;
       justify-content: flex-end;
+      order: 1;
      }
+
+    /* @media screen and (min-width:800px) {
+
+          font-size: 20px;
+     } */
