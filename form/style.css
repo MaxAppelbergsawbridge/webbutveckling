@@ -10,3 +10,14 @@ fieldset {
   display: flex;
   justify-content: space-evenly;
 }
+button {
+  margin-top: 1.5rem;
+}
+
+.question {
+  margin-top: 1.5rem;
+}
+
+.invisible {
+  display: none;
+}

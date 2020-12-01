@@ -5,64 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="quiz.js"></script>
 </head>
 <body>
     <header>
         How sad are you over Brexit?
     </header>
+
     <form action="">
+<div class="question">
         <fieldset>
             <legend> Finish the sentence: Nigel Farage has...</legend>
             <label>
-                 <input type="radio" name="radiobutton1" id="saved-us-all">saved us all.
+                 <input type="radio" name="radiobutton1" id="saved-us-all" value="0"> saved us all.
             </label>
             <label>
-                <input type="radio" name="radiobutton1" id="doomed-us-all"> doomed us all.
+                <input type="radio" name="radiobutton1" id="doomed-us-all" value="1"> doomed us all.
             </label>
         </fieldset>
+</div>
             <fieldset>
             <legend> Is the EU? </legend>
             <label>
-                <input type="radio" name="radiobutton2" id="the-4th-reich"> the 4th reich.
+                <input type="radio" name="radiobutton2" id="the-4th-reich" value="0"> the 4th reich.
             </label>
                 <label>
-                <input type="radio" name="radiobutton2" id="an-economic-and-political-union"> an economic and political union.
+                <input type="radio" name="radiobutton2" id="an-economic-and-political-union" value="1"> an economic and political union.
             </label>
             <label>
-                <input type="radio" name="radiobutton2" id="EUSSR"> the EUSSR.
+                <input type="radio" name="radiobutton2" id="EUSSR" value="0"> the EUSSR.
             </label>
         </fieldset>
         <fieldset>
             <legend>Finish the sentence: Boris Johnson is</legend>
             <label>
-                <input type="radio" name="radiobutton3" id="being-reasonable-for-once"> being reasonable for once 
+                <input type="radio" name="radiobutton3" id="being-reasonable-for-once" value="1"> being reasonable for once 
             </label>
             <label>
-                <input type="radio" name="radiobutton3" id="ruining-Brexit"> ruining Brexit
+                <input type="radio" name="radiobutton3" id="ruining-Brexit" value="0"> ruining Brexit
             </label>
         </fieldset>
         <fieldset>
         <legend>Brexit is?</legend>
         <label>
-            <input type="radio" name="radiobutton4"> pro-establishment
+            <input type="radio" name="radiobutton4" value="0"> pro-establishment
         </label>
         <label>
-            <input type="radio" name="radiobutton4">anti-establishment
+            <input type="radio" name="radiobutton4" value="1">anti-establishment
         </label>
         <label>
-            <input type="radio" name="radiobutton4">pro is anti, anti is pro,pro is anti,anti is pro, pro is anti. 
+            <input type="radio" name="radiobutton4" value="0">pro is anti, anti is pro,pro is anti,anti is pro, pro is anti. 
         </label>
         </fieldset>
         <fieldset>
             <legend> Democracy has...</legend>
             <label>
-                <input type="radio" name="radiobutton5" id="failed-us1"> failed us.
+                <input type="radio" name="radiobutton5" id="failed-us1" value="1"> failed us.
             </label>
             <label>
-                <input type="radio" name="radiobutton5" id="failed-us2"> failed us.
+                <input type="radio" name="radiobutton5" id="failed-us2" value="1"> failed us.
             </label>   
         </fieldset>
-        <button>Ready to find out how sad you are?</button>
+        <button type="button" onclick="submitQuiz()">Ready to find out how sad you are?</button>
     </form>
+    <div class="result invisible">
+        <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
+        <button type="button" onclick="resetQuiz()">Försök igen</button>
+      </div>
 </body>
 </html>
